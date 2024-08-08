@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="./css/order.css">
+    <script defer src="./js/order.js"></script>
+    <link rel="icon" type="image/x-icon" href="./images/order/logo.webp">
+    <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+
+</head>
+<body>
+
+<!----------------------------------navigation bar ---------------------------------------->
+
+<header>
+    <img class="logo" src="./images/order/logo.webp" alt="Logo"  width="110" height="110">
+    <section class="search-box">
+        <form action="search">
+            <label for="srch">
+                <input type="text" name="search" id="srch" placeholder="search">
+                <button id="srch-btn" type="submit"><img src="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXpJREFUSEvVlE12gkAQhKtVIN5CTxLdwSmiJ1FOojkF7DAnkZyCAJFOenDwhx8nqIuw4T140193TXURnvzQk+ujFZDmwZpBrwTMwIgB7ED86Vje+i9N1QBJHswGTBsQJo2FGHFBvBxb3s4EdAFQxUGRHGRgx2BfCiVJMBkOMSuI3tREAArw3ARyAUizcK86Z2wd2102dSjSAbQS2Rzbnd6aogLog9L5i+XOuw5+5WFUTsL+rTs5AbJQdF8Q89K2vW0XQEtp0sw5QMlTfPN0PPbENa2P3MlgRHsTmXoBhJzmIcvbsdzOXap+al1N3JFlwYKJNl1m0ONXAH3IRNdel6x0HVJULli7O9KjGUz0lylaF00KENg/HFBu7AgTAq30opnIUwPIh8tJGowkuUT8rpdNmuiydaMDdDRI2P2GnIoGJjXRh16s0z2ov60L1zuuz3OrnLMZ0htQ7sIxlyol65C7ACaQuwHXkOssewhAQ4gRXzvqYYC2ZPz/gB+MTNIZ+vADcAAAAABJRU5ErkJggg==" alt="srch"></button>
+            </label>
+        </form>
+    </section>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li class="dropdown">
+            <a href="#">Products<i class="bx bx-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="./dairy.html">Dairy</a></li>
+                <li><a href="./vegitables.html">Vegitables</a></li>
+                <li><a href="./cosmatics.html">Cosmetics</a></li>
+                <li><a href="./fruits.html">Fruits</a></li>
+                <li><a href="./meat.html">Meat and Seafood</a></li>
+                <li><a href="./ingrediants.html">Baking and Cooking Ingredients</a></li>
+            </ul>
+        </li>
+        <li><a href="./order.html">order</a></li>
+        <li><a href="./Login.html">Registration</a></li>
+        <li><a href="#"><i class='bx bxs-cart' style='color:#ffffff'  ></i></a></li>
+    </ul>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li class="dropdown">
+            <a href="#">Products<i class="bx bx-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="./dairy.html">Dairy</a></li>
+                <li><a href="./vegitables.html">Vegitables</a></li>
+                <li><a href="./cosmatics.html">Cosmetics</a></li>
+                <li><a href="./fruits.html">Fruits</a></li>
+                <li><a href="./meat.html">Meat and Seafood</a></li>
+                <li><a href="./ingrediants.html">Baking and Cooking Ingredients</a></li>
+            </ul>
+        </li>
+        <li><a href="./order.html">order</a></li>
+        <li><a href="./Login.html">Registration</a></li>
+        <li><a href="#"><i class='bx bxs-cart' style='color:#ffffff'  ></i></a></li>
+    </ul>
+    <section class="menu">
+        <label for="chk1">
+            <i onclick=showSidebar() class='bx bx-menu' style='color:#ffffff'></i>
+        </label>
+    </section>
+</header>
+
+<!------------------------------------- slideshow --------------------------------------->
+
+<section class="slider">
+<figure>
+    <img src="./images/order/banner2.webp" alt="">
+    <img src="./images/order/banner1.webp" alt="">
+    <img src="./images/order/cosmetics_banner.webp" alt="">
+    <img src="./images/order/banner3.webp" alt="">
+</figure>
+</section>
+
+<!------------------------------------- products ---------------------------------------->
+
+    <section class="main-scroll">
+        <section class="fruits">
+            <h1>Fruits</h1>
+            <section class="scroll-products">
+                <section class="special-box" data-price="45.00">
+                    <img src="./images/fruits/1.webp" alt="Orange">
+                    <h2>Orange<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 45.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="80.00">
+                    <img src="./images/fruits/2.webp" alt="Apple">
+                    <h2>Apple<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 80.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="205.00">
+                    <img src="./images/fruits/3.webp" alt="Stawberry">
+                    <h2>Stawberry<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 205.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="20.00">
+                    <img src="./images/fruits/4.webp" alt="Banana">
+                    <h2>Banana<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 20.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="60.00">
+                    <img src="./images/fruits/5.webp" alt="Avacardo">
+                    <h2>Avacardo<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 60.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="80.00">
+                    <img src="./images/fruits/6.webp" alt="Dragon-fruit">
+                    <h2>Dragon-fruit<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 80.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="100.00">
+                    <img src="./images/fruits/7.webp" alt="Duriyan">
+                    <h2>Duriyan<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 100.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="45.00">
+                    <img src="./images/fruits/8.webp" alt="Watermellon">
+                    <h2>Watermellon<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 45.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="80.00">
+                    <img src="./images/fruits/grapes.webp" alt="Grapes">
+                    <h2>Grapes<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 80.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="vegetables">
+            <h1>Vegetables</h1>
+            <section class="scroll-products">
+                <section class="special-box" data-price="19.00">
+                    <img src="./images/vegitables/veg1.webp" alt="Onion">
+                    <h2>Onion<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 19.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="24.00">
+                    <img src="./images/vegitables/veg2.webp" alt="Tomato">
+                    <h2>Tomato<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 24.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="80.00">
+                    <img src="./images/vegitables/veg3.webp" alt="Belpeper">
+                    <h2>Belpeper<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 80.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="65.00">
+                    <img src="./images/vegitables/veg4.webp" alt="Pathola">
+                    <h2>Pathola<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 65.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="38.00">
+                    <img src="./images/vegitables/veg5.webp" alt="Beans">
+                    <h2>Beans<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 38.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="23.00">
+                    <img src="./images/vegitables/veg6.webp" alt="Brinjal">
+                    <h2>Brinjal<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 23.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="46.00">
+                    <img src="./images/vegitables/veg7.webp" alt="Carrot">
+                    <h2>Carrot<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 46.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="32.00">
+                    <img src="./images/vegitables/veg8.webp" alt="Pumkin">
+                    <h2>Pumkin<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 32.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="45.00">
+                    <img src="./images/vegitables/veg9.webp" alt="Cabbage">
+                    <h2>Cabbage<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 45.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="dairy">
+            <h1>Dairy Produce</h1>
+            <section class="scroll-products">
+                <section class="special-box" data-price="450.00">
+                    <img src="./images/dairy/dairy1.webp" alt="Milk">
+                    <h2>Ambewala Fresh<br></h2><h4> Milk (1l)</h4>
+                    <h3>Rs. 450.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="1,050.00">
+                    <img src="./images/dairy/dairy2.webp" alt="Cheese">
+                    <h2>Happy Cow<br></h2><h4> Cheese (8p)</h4>
+                    <h3>Rs. 1,050.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="40.00">
+                    <img src="./images/dairy/dairy3.webp" alt="Yourget">
+                    <h2>Anchor Newladle<br></h2><h4> Yourget</h4>
+                    <h3>Rs. 40.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="650.00">
+                    <img src="./images/dairy/dairy4.webp" alt="Kothmale Curd">
+                    <h2>Kothmale Curd<br></h2><h4> (900g)</h4>
+                    <h3>Rs. 650.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="400.00">
+                    <img src="./images/dairy/dairy5.webp" alt="Astra Butter">
+                    <h2>Astra Butter<br></h2><h4> (250g)</h4>
+                    <h3>Rs. 400.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="500.00">
+                    <img src="./images/dairy/dairy6.webp" alt="Anchor Fresh">
+                    <h2>Anchor Fresh <br></h2><h4> Milk (1l)</h4>
+                    <h3>Rs. 500.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="746.00">
+                    <img src="./images/dairy/dairy7.webp" alt="Edimbaro Easy Cheese">
+                    <h2>Edimbaro Easy<br></h2><h4> Cheese (200g)</h4>
+                    <h3>Rs. 746.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="58.00">
+                    <img src="./images/dairy/dairy8.webp" alt="Highland Yourget">
+                    <h2>Highland Yourget
+                    <h3>Rs. 58.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="450.00">
+                    <img src="./images/dairy/dairy9.webp" alt="Chello Curd">
+                    <h2>Chello Curd<br></h2><h4> (900g)</h4>
+                    <h3>Rs. 450.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="meat">
+            <h1>Meat & Seafood</h1>
+            <section class="scroll-products">
+                <section class="special-box" data-price="89.00">
+                    <img src="./images/meat/chicken_legs.webp" alt="Chicken Legs">
+                    <h2>Chicken Legs<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 89.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="204.00">
+                    <img src="./images/meat/beef.webp" alt="Beef">
+                    <h2>Beef<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 204.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="106.00">
+                    <img src="./images/meat/chicken_liver.webp" alt="Chicken Liver">
+                    <h2>Chicken Liver<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 106.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="124.00">
+                    <img src="./images/meat/cutfish.webp" alt="cutfish">
+                    <h2>cutfish<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 124.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="109.00">
+                    <img src="./images/meat/Prawns.webp" alt="Prawns">
+                    <h2>Prawns<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 109.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="430.00">
+                    <img src="./images/meat/crab.webp" alt="Crab">
+                    <h2>Crab<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 430.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="157.00">
+                    <img src="./images/meat/lamb_leg.webp" alt="Lamb Leg">
+                    <h2>Lamb Leg<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 157.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="100.00">
+                    <img src="./images/meat/dryfish.webp" alt="Dryfish">
+                    <h2>Dryfish<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 100.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="ingredients">
+            <h1>Baking & Cooking Ingredients</h1>
+            <section class="scroll-products">
+                <section class="special-box" data-price="340.00">
+                    <img src="./images/ingrediants/bakingpowder.webp" alt="Baking Powder">
+                    <h2>Baking Powder
+                    <h3>Rs. 340.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="450.00">
+                    <img src="./images/ingrediants/biscuit_powder.webp" alt="Biscuit Powder">
+                    <h2>Biscuit Powder<br></h2><h4>(500g)</h4>
+                    <h3>Rs. 450.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="300.00">
+                    <img src="./images/ingrediants/cardamom.webp" alt="Cardamom">
+                    <h2>Cardamom<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 300.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="90.00">
+                    <img src="./images/ingrediants/dark_chocolate.webp" alt="Dark Chocolate">
+                    <h2>Dark Chocolate<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 90.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="55.00">
+                    <img src="./images/ingrediants/eggs.webp" alt="Egg">
+                    <h2>Egg
+                    <h3>Rs. 55.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="29.00">
+                    <img src="./images/ingrediants/flour.webp" alt="Flour">
+                    <h2>Flour<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 29.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="100.00">
+                    <img src="./images/ingrediants/ginger.webp" alt="Ginger">
+                    <h2>Ginger<br></h2><h4>(100g)</h4>
+                    <h3>Rs. 100.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="340.00">
+                    <img src="./images/ingrediants/icing_sugar.webp" alt="Icing Sugar">
+                    <h2>Icing Sugar<br></h2><h4>(200g)</h4>
+                    <h3>Rs. 340.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+                <section class="special-box" data-price="1,560.00">
+                    <img src="./images/ingrediants/olive_oil.webp" alt="Olive Oil">
+                    <h2>Olive Oil<br></h2><h4>(750ml)</h4>
+                    <h3>Rs. 1,560.00</h3>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </section>
+            </section>
+        </section>
+    </section>
+
+<!----------------------------------------- order summery ------------------------------------------->
+
+    <table id="order-summary">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="order-items">
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colh4="2">Total</td>
+                <td id="total-price">Rs. 0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <section id="order-button">
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="buyNow()">Buy Now</button>
+        <button onclick="saveFavourite()">Add to Favourites</button>
+        <button onclick="applyFavourite()">Apply Favourites</button>
+    </section>
+
+
+<!-----------------------------------------footer section---------------------------------------------->
+
+<footer>
+    <div class="footerContainer">
+        <div class="footer-par">
+            <h4>Thank you for shopping with QUICK-MART Supermarket. We are committed to providing you with the freshest produce, highest quality products, and exceptional customer service. Stay connected with us on social media for the latest updates, special offers, and more. If you have any questions or need assistance, please don't hesitate to contact us. We look forward to serving you again soon!</h4>
+        </div>
+        <div class="socialIcons">
+
+            <a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.google.co.uk/"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./about.html">Contact us</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="./about.html">our Team</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright © 2024 QM Marketing Services (Pvt) Ltd.</p>
+        <img src="./images/order/vi.webp" alt="" width="70px" height="40px">
+        <img src="./images/order/mc.webp" alt="" width="70px" height="40px">
+        <img src="./images/order/pp.webp" alt="" width="70px" height="40px">
+    </div>
+</footer>
+
+    <script src="./js/order.js"></script>
+
+</body>
+</html>

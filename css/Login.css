@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    background: url(../images/login/login_page.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display:inline;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    top: -16px;
+    left: -30px;
+    margin-top: 10px;
+    margin-left: 2px;
+    border-radius: 50px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    box-shadow: 0,0,10px #000;
+    background: #212222;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #387e5b;
+    backdrop-filter: blure(10px);
+    box-shadow: -10px 0 10px rgba(103, 175, 223, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+    margin: 10px; 
+    font-weight: 600;
+}
+.sidebar a{
+    width: 100%;
+    color: #ffffff;
+} 
+.sidebar li i{
+    color: #000000;
+    font-size: 30px;
+}
+.sidebar .dropdown-menu{
+    width: 150px;
+    height: auto;
+}
+#chk1{
+    display: none;
+}
+i{
+    color: white;
+    cursor: pointer;
+}
+header .logo{
+    flex: 1;
+    color: white;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+header .search-box{
+    flex: 1;
+    position: relative;
+    padding-left: 200px;
+}
+.search-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 30px;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+}
+.search-box button{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #387e5b;
+    border: none;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+header ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+header ul li{
+    list-style: none;
+    padding: auto;
+    padding-top: 10px;
+}
+header ul li i{
+    font-size: 23px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+header ul li a:hover{
+    border-bottom: 3px solid #66b18b;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown i{
+    position: absolute;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #404344;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu li{
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #000;
+    font-size: 13px;
+}
+.dropdown-menu li:last-child{
+    border-bottom: none;
+}
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+
+/*------------------------------------------------- registration section ---------------------------------------*/
+
+.container{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 350px;
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: center;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    padding-bottom: 15px;
+    padding-left: 10px
+}
+
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 0 10px;
+}
+
+.gender-details-box{
+    margin-left: 10px;
+}
+.gender-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10px;
+    border-bottom: 1px solid white;
+}
+
+.gender-category{
+    margin: 20px 0;
+    margin-left: 10px;
+    color: white;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+.loyalty-details-box{
+    margin-left: 10px;
+}
+.loyalty-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10px;
+    border-bottom: 1px solid white;
+}
+
+.loyalty-category{
+    margin: 20px 0;
+    margin-left: 10px;
+    color: white;
+}
+
+.loyalty-category label{
+    padding: 0 20px 0 5px;
+}
+
+.loyalty-category label,
+.loyalty-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    background: #46b18b;
+}
+
+.form-submit-btn input:hover{
+    background: #56b18b;
+    color: #333533;
+}
+
+/*-------------------------------------------- loyalty scheme benifits ---------------------------*/
+
+.benifits{
+    box-sizing: border-box;
+    border: 2px solid #36b18b;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 700px;
+    margin-left: 350px;
+    margin-bottom: 70px;
+}
+.benifits h2{
+    margin-left: 250px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+.benifits li{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+/*----------------------------------------------- footer section -----------------------------------*/
+
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 25px;
+    color: black;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footer-par{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-par h4 {
+    font-size: 12px;
+    text-align: center;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    height: 70px;
+}
+.footerBottom p{
+    color: white;
+    float: left;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.footerBottom img{    
+    float: right;
+}
+
+/*------------------------------------------ responsive ----------------------------------*/
+
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+        margin-left: 10px;
+    }
+    .user-input-box{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-details-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-details-box{
+        display: grid;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+    .form-submit-btn{
+        margin-top: -4px;
+    }
+}
+
+@media(max-width:768px){
+    .container{
+        height: 500px;
+        width: 380px;
+    }
+    .container .form-box h2{
+        font-size: 32px;
+    }
+    .form-box .input-box{
+        margin: 35px 0;
+        width: 300px;
+    }
+    .form-box .input-box img{
+        font-size: 18px;
+    }
+    .form-box .input-box label{
+        font-size: 14px;
+    }
+    .btn{
+        height: 40px;
+        width: 100px;
+        font-size: 14px;
+    }
+    .account-creation{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 700px){
+    .benifits{
+        width: 80%;
+        margin-left: 45px;
+    }
+    .benifits h2{
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+    .footerBottom{
+        height: 130px;
+    }
+    .footer-par{
+        margin-left: 10px;
+        width: 95%;
+    }
+    .footerBottom{
+        height: 70px;
+    }
+    .footerBottom p{
+        font-size: 10px;
+        margin-left: 8px;
+    }
+    .footerBottom img{
+        width: 30px;
+        height: 20px;
+        margin-top: 10px;
+        padding: 2px;
+    }
+}
+     

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick-Mart</title>
+    <link rel="stylesheet" href="./css/dairy.css">
+    <link rel="icon" type="image/x-icon" href="./images/dairy/logo.webp">
+    <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+</head>
+<body>
+ 
+<!------------------------------------------ navigation bar ----------------------------------------->
+
+    <header>
+        <img class="logo" src="./images/dairy/logo.webp" alt="Logo"  width="110" height="110">
+        <section class="search-box">
+                <input type="text" name="search" id="srch" placeholder="search">
+                <button type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXpJREFUSEvVlE12gkAQhKtVIN5CTxLdwSmiJ1FOojkF7DAnkZyCAJFOenDwhx8nqIuw4T140193TXURnvzQk+ujFZDmwZpBrwTMwIgB7ED86Vje+i9N1QBJHswGTBsQJo2FGHFBvBxb3s4EdAFQxUGRHGRgx2BfCiVJMBkOMSuI3tREAArw3ARyAUizcK86Z2wd2102dSjSAbQS2Rzbnd6aogLog9L5i+XOuw5+5WFUTsL+rTs5AbJQdF8Q89K2vW0XQEtp0sw5QMlTfPN0PPbENa2P3MlgRHsTmXoBhJzmIcvbsdzOXap+al1N3JFlwYKJNl1m0ONXAH3IRNdel6x0HVJULli7O9KjGUz0lylaF00KENg/HFBu7AgTAq30opnIUwPIh8tJGowkuUT8rpdNmuiydaMDdDRI2P2GnIoGJjXRh16s0z2ov60L1zuuz3OrnLMZ0htQ7sIxlyol65C7ACaQuwHXkOssewhAQ4gRXzvqYYC2ZPz/gB+MTNIZ+vADcAAAAABJRU5ErkJggg=="></button>
+        </section>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Products<i class="bx bx-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./dairy.html">Dairy</a></li>
+                    <li><a href="./vegitables.html">Vegitables</a></li>
+                    <li><a href="./cosmatics.html">Cosmetics</a></li>
+                    <li><a href="./fruits.html">Fruits</a></li>
+                    <li><a href="./meat.html">Meat and Seafood</a></li>
+                    <li><a href="./ingrediants.html">Baking and Cooking Ingredients</a></li>
+                </ul>
+            </li>
+            <li><a href="./order.html">order</a></li>
+            <li><a href="./Login.html">Registration</a></li>
+        <section class="cart-logo">
+            <li><a href="#"><i onclick=showCart() class='bx bxs-cart' style='color:#ffffff' ></i></a></li>
+        </section>
+        </ul>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Products<i class="bx bx-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./dairy.html">Dairy</a></li>
+                    <li><a href="./vegitables.html">Vegitables</a></li>
+                    <li><a href="./cosmatics.html">Cosmetics</a></li>
+                    <li><a href="./fruits.html">Fruits</a></li>
+                    <li><a href="./meat.html">Meat and Seafood</a></li>
+                    <li><a href="./ingrediants.html">Baking and Cooking Ingredients</a></li>
+                </ul>
+            </li>
+            <li><a href="./order.html">order</a></li>
+            <li><a href="./Login.html">Registration</a></li>
+        <section class="cart-logo">
+            <li><a href="#"><i onclick=showCart() class='bx bxs-cart' style='color:#ffffff' ></i></a></li>
+        </section>
+        </ul>
+        <section class="menu">
+            <label for="chk1">
+                <i onclick=showSidebar() class='bx bx-menu' style='color:#ffffff'></i>
+            </label>
+        </section>
+    </header>
+
+<!------------------------------------------ slideshow ------------------------------------------>
+
+    <section class="slider">
+        <figure>
+            <img src="./images/dairy/dairy_banner_1.webp">
+            <img src="./images/dairy/dairy_banner.webp">
+            <img src="./images/dairy/dairy_banner_2.webp">
+        </figure>
+    </section>
+
+<!-------------------------------------------- paragraph -------------------------------------->    
+
+    <section class="introduction">
+        <h2>Indulge in Dairy Delights at <span>QUICK-MART</span></h2>
+        <p>Welcome to Quick-Mart Grocery Store, your one-stop destination for a wide variety of dairy products! We take pride in offering a diverse selection to meet all your culinary needs. Our shelves are stocked with fresh milk, creamy yogurt, rich butter, and a delightful assortment of cheeses. Whether you’re looking for traditional cow's milk, plant-based alternatives, or specialty items like artisanal cheeses and cultured dairy products, Quick-Mart has something for everyone. Visit us today and discover the quality and freshness that make our dairy products stand out.</p>
+    </section>
+
+<!--------------------------------------------------- products section --------------------------------------------->
+
+        <section class="special">
+            <section class="special-box">
+                <img src="./images/dairy/dairy1.webp">
+                <h2>Ambewala Fresh<br><span> Milk (1l)</span></h2>
+                <h3>Rs. 450.00</h3>
+                <button class="add-cart"><a href="./buynow.html">Add to cart</a></button>
+            </section>
+            <section class="special-box">
+                <img src="./images/dairy/dairy2.webp">
+                <h2>Happy Cow<br><span1> Cheese (8pi)</span1></h2>
+                <h3>Rs. 1050.00</h3>
+                <button class="add-cart"><a href="./buynow.html">Add to cart</a></button>
+            </section>
+            <section class="special-box">
+                <img src="./images/dairy/dairy3.webp">
+                <h2>Anchor Newladle<br><span> Yourget</span></h2>
+                <h3>Rs. 40.00</h3>
+                <button class="add-cart"><a href="./buynow.html">Add to cart</a></button>
+            </section>
+            <section class="special-box">
+                <img src="./images/dairy/dairy4.webp">
+                <h2>Kothmale Curd<br><span> (900g)</span></h2>
+                <h3>Rs. 650.00</h3>
+                <button class="add-cart"><a href="./buynow.html">Add to cart</a></button>
+            </section>
+            <section class="special-box">
+                <img src="./images/dairy/dairy5.webp">
+                <h2>Astra Butter<br><span> (250g)</span></h2>
+                <h3>Rs. 400.00</h3>
+                <button class="add-cart"><a href="./buynow.html">Add to cart</a></button>
+            </section>
+            <section class="special-box">
+                <img src="./images/dairy/dairy6.webp">
+                <h2>Anchor Fresh <br><span> Milk (1l)</span></h2>
+                <h3>Rs. 500.00</h3>
+                <button class="add-cart"><a href="./buynow.html">Add to cart</a></button>
+            </section>
+            <section class="special-box">
+                <img src="./images/dairy/dairy7.webp">
+                <h2>Edimbaro Easy<br><span1> Cheese (200g)</span1></h2>
+                <h3>Rs. 746.00</h3>
+                <button class="add-cart"><a href="./buynow.html">Add to cart</a></button>
+            </section>
+            <section class="special-box">
+                <img src="./images/dairy/dairy8.webp">
+                <h2>Highland Yourget</h2>
+                <h3>Rs. 55.00</h3>
+                <button class="add-cart"><a href="./buynow.html">Add to cart</a></button>
+            </section>
+            <section class="special-box">
+                <img src="./images/dairy/dairy9.webp">
+                <h2>Chello Curd<br><span> (900g)</span></h2>
+                <h3>Rs. 450.00</h3>
+                <button class="add-cart"><a href="./buynow.html">Add to cart</a></button>
+            </section>
+            <section class="special-box">
+                <img src="./images/dairy/dairy10.webp">
+                <h2>Flora Butter<br><span> (350g)</span></h2>
+                <h3>Rs. 900.00</h3>
+                <button class="add-cart"><a href="./buynow.html">Add to cart</a></button>
+            </section>
+        </section>
+
+<!-----------------------------------------------------footer section---------------------------------->
+
+<footer>
+    <section class="footerContainer">
+        <section class="footer-par">
+            <p>Thank you for shopping with QUICK-MART Supermarket. We are committed to providing you with the freshest produce, highest quality products, and exceptional customer service. Stay connected with us on social media for the latest updates, special offers, and more. If you have any questions or need assistance, please don't hesitate to contact us. We look forward to serving you again soon!</p>
+        </section>
+        <section class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </section>
+        <section class="footerNav">
+            <ul><li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">our Team</a></li>
+            </ul>
+        </section>
+        
+    </section>
+    <section class="footerBottom">
+        <p>Copyright © 2024 QM Marketing Services (Pvt) Ltd.</p>
+        <img src="./images/dairy/vi.webp" width="70px" height="40px">
+        <img src="./images/dairy/mc.webp" width="70px" height="40px">
+        <img src="./images/dairy/pp.webp" width="70px" height="40px">
+    </section>
+</footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+
+<script src="./js/dairy.js" defer></script>
+    
+    </body>
+    </html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick-Mart</title>
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="icon" type="image/x-icon" href="../Quick-Mart/images/about/logo.webp">
+    <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../Quick-Mart/images/about/logo.webp" alt="Logo"  width="110" height="110">
+        <section class="search-box">
+            <form action="">
+                <input type="text" name="search" id="srch" placeholder="search">
+                <button type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXpJREFUSEvVlE12gkAQhKtVIN5CTxLdwSmiJ1FOojkF7DAnkZyCAJFOenDwhx8nqIuw4T140193TXURnvzQk+ujFZDmwZpBrwTMwIgB7ED86Vje+i9N1QBJHswGTBsQJo2FGHFBvBxb3s4EdAFQxUGRHGRgx2BfCiVJMBkOMSuI3tREAArw3ARyAUizcK86Z2wd2102dSjSAbQS2Rzbnd6aogLog9L5i+XOuw5+5WFUTsL+rTs5AbJQdF8Q89K2vW0XQEtp0sw5QMlTfPN0PPbENa2P3MlgRHsTmXoBhJzmIcvbsdzOXap+al1N3JFlwYKJNl1m0ONXAH3IRNdel6x0HVJULli7O9KjGUz0lylaF00KENg/HFBu7AgTAq30opnIUwPIh8tJGowkuUT8rpdNmuiydaMDdDRI2P2GnIoGJjXRh16s0z2ov60L1zuuz3OrnLMZ0htQ7sIxlyol65C7ACaQuwHXkOssewhAQ4gRXzvqYYC2ZPz/gB+MTNIZ+vADcAAAAABJRU5ErkJggg=="></button>
+            </form>
+        </section>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Products<i class="bx bx-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./dairy.html">Dairy</a></li>
+                    <li><a href="./vegitables.html">Vegitables</a></li>
+                    <li><a href="./cosmatics.html">Cosmetics</a></li>
+                    <li><a href="./fruits.html">Fruits</a></li>
+                    <li><a href="./meat.html">Meat and Seafood</a></li>
+                    <li><a href="./ingrediants.html">Baking and Cooking Ingredients</a></li>
+                </ul>
+            </li>
+            <li><a href="./order.html">order</a></li>
+            <li><a href="./Login.html">Registration</a></li>
+            <li><a href="#"><i class='bx bxs-cart' style='color:#ffffff'  ></i></a></li>
+        </ul>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Products<i class="bx bx-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./dairy.html">Dairy</a></li>
+                    <li><a href="./vegitables.html">Vegitables</a></li>
+                    <li><a href="./cosmatics.html">Cosmetics</a></li>
+                    <li><a href="./fruits.html">Fruits</a></li>
+                    <li><a href="./meat.html">Meat and Seafood</a></li>
+                    <li><a href="./ingrediants.html">Baking and Cooking Ingredients</a></li>
+                </ul>
+            </li>
+            <li><a href="./order.html">order</a></li>
+            <li><a href="./Login.html">Registration</a></li>
+            <li><a href="#"><i class='bx bxs-cart' style='color:#ffffff'  ></i></a></li>
+        </ul>
+        <section class="menu">
+            <label for="chk1">
+                <i onclick=showSidebar() class='bx bx-menu' style='color:#ffffff'></i>
+            </label>
+        </section>
+    </header>
+    <section class="background">
+        <img src="./images/about/Cover.webp" width="100%" height="600px">
+    </section>
+
+<!-------------------------------------------google map ------------------------------------------>
+        <section class="box-22">
+
+            <section class="container">
+                <h1>QUICK-MART Kandy branch</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.55230722564!2d80.63311757365577!3d7.291667213763068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae36700322d8121%3A0x925bf4c87ed050e!2sQuick-Mart!5e0!3m2!1sen!2slk!4v1715921869197!5m2!1sen!2slk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <section class="par">
+                    <p>Quick-Mart in Kandy is your friendly neighborhood grocery store, offering a wide selection of fresh produce and quality products like, dairy products, and everyday essentials. Conveniently located, QuickMart is committed to providing a pleasant shopping experience with competitive prices and excellent customer service. Whether you're stocking up for the week or just grabbing a few items, QuickMart is here to meet all your grocery needs efficiently and with a smile.</p>
+                </section>
+            </section>
+            <section class="container">
+                <h1>QUICK-MART Colombo branch</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.095494588071!2d79.85760197365242!3d6.879162018930888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b0078e70321%3A0x4323c030e50ea5c7!2sQuick-Mart!5e0!3m2!1sen!2slk!4v1715926762070!5m2!1sen!2slk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <section class="par">
+                    <p>Quick-Mart in Colombo 7 is your trusted local grocery store, offering a variety of fresh produce and quality products like, dairy products, and daily essentials. Conveniently located in the heart of Colombo 7, QuickMart ensures a pleasant shopping experience with competitive prices and excellent customer service. Whether you're stocking up for the week or grabbing a few items, QuickMart has all your grocery needs covered efficiently and with a smile.</p>
+                </section>
+            </section>
+            <section class="container">
+                <h1>QUICK-MART Anuradhpura branch</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.9138790162806!2d80.40107587366536!3d8.31135709981215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcf500551b311d%3A0xa3f220b07469d5f6!2sQuick-Mart!5e0!3m2!1sen!2slk!4v1715927601560!5m2!1sen!2slk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <section class="par">
+                    <p>Quick-Mart in Anuradhapura is your reliable neighborhood grocery store, providing a wide range of fresh produce and quality products like, dairy products, and household essentials. Conveniently located in the heart of Anuradhapura, QuickMart offers a pleasant shopping experience with competitive prices and excellent customer service. Whether you're planning your weekly shop or just need a few items, QuickMart in Anuradhapura has all your grocery needs covered efficiently and with a smile.</p>
+                </section>
+            </section>
+        </section>
+
+    <section class="banner">
+        <img src="./images/about/banner.webp" width="100%">
+    </section>
+    
+
+<!-------------------------------------------- table section ----------------------------------------->
+
+    <section class="aboutTable">
+        <h1>QuickMart Services</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Details</th>
+                    <th>Contact Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Catering Services</td>
+                    <td>High-quality catering for all events with customizable menus.</td>
+                    <td>Email: catering@quickmart.com<br>Phone: 123-456-7890</td>
+                </tr>
+                <tr>
+                    <td>Delivery Services</td>
+                    <td>Fast and reliable grocery delivery right to your door.</td>
+                    <td>Email: delivery@quickmart.com<br>Phone: 098-765-4321</td>
+                </tr>
+                <tr>
+                    <td>Party Planning</td>
+                    <td>Comprehensive party planning services for any occasion.</td>
+                    <td>Email: party@quickmart.com<br>Phone: 111-222-3333</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">For general inquiries, contact us at: quickmart@gmail.com</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    
+
+<!---------------------------------------- footer section ----------------------------------------->
+
+    <footer>
+        <section class="footerContainer">
+            <section class="footer-par">
+                <p>Thank you for shopping with QUICK-MART Supermarket. We are committed to providing you with the freshest produce, highest quality products, and exceptional customer service. Stay connected with us on social media for the latest updates, special offers, and more. If you have any questions or need assistance, please don't hesitate to contact us. We look forward to serving you again soon!</p>
+            </section>
+            <section class="socialIcons">
+                <a href="https://en-gb.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://en-gb.facebook.com/login.php/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://en-gb.facebook.com/login.php/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://en-gb.facebook.com/login.php/"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="https://en-gb.facebook.com/login.php/"><i class="fa-brands fa-youtube"></i></a>
+            </section>
+            <section class="footerNav">
+                <ul><li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Reviews</a></li>
+                    <li><a href="">our Team</a></li>
+                </ul>
+            </section>
+            
+        </section>
+        <section class="footerBottom">
+            <p>Copyright © 2024 QM Marketing Services (Pvt) Ltd.</p>
+            <img src="./images/about/vi.webp" width="70px" height="40px">
+            <img src="./images/about/mc.webp" width="70px" height="40px">
+            <img src="./images/about/pp.webp" width="70px" height="40px">
+        </section>
+    </footer>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    
+    </body>
+    </html>
